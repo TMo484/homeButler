@@ -42,11 +42,11 @@ class Application(tk.Tk):
         self.background.place(x=0,y=0)
         
         ## initialize the widget data
-#        self.wunder_data = wgi.wunder()
-#        self.hutch_lamp = wemo.wemo_switch('Hutch Lamp')
-#        self.bedroom_lamp = wemo.wemo_switch('Bedroom')
-#        self.dining_room = wemo.wemo_switch('Dining Room')
-#        self.chair_lamp = wemo.wemo_switch('Chair Lamp')
+        self.wunder_data = wgi.wunder()
+        self.hutch_lamp = wemo.wemo_switch('Hutch Lamp')
+        self.bedroom_lamp = wemo.wemo_switch('Bedroom')
+        self.dining_room = wemo.wemo_switch('Dining Room')
+        self.chair_lamp = wemo.wemo_switch('Chair Lamp')
         self.rs_team = sport.sport(red_sox_icon, red_sox_schedule)
         self.cool_train = mbta.mbta_train('cool', 1, 'C')
         self.brkhl_train = mbta.mbta_train('brkhl', 1, 'D')
